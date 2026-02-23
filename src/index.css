@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 2%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Orbitron', 'Space Grotesk', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-foreground;
+    font-family: 'Orbitron', 'Space Grotesk', sans-serif !important;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+}
+
+
+
+
+:root {
+  --bg-color: #050505;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-color: #fcee48;
+  --text-on-accent: #000000;
+
+  --font-heading: 'Orbitron', 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-script: 'Permanent Marker', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.script-text {
+  font-family: var(--font-script);
+  color: var(--accent-color);
+  transform: rotate(-3deg);
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: var(--text-on-accent);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background: #fff;
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+/* Service Card */
+.service-card {
+  padding: 2rem;
+  border: 1px solid #111;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.service-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #333;
+  transform: translateY(-5px);
+}
+
+/* Work Card */
+.work-card {
+  cursor: pointer;
+}
+
+.work-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #111;
+  border: 1px solid #222;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.work-card:hover .work-card-img {
+  background: #151515;
+  border-color: #444;
+  transform: scale(1.02);
+  color: #fff;
+}
+
+/* Contact Link */
+.contact-link {
+  transition: opacity 0.3s;
+}
+
+.contact-link:hover {
+  opacity: 0.8;
+}
+
+/* Social Links */
+.social-link {
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Tech Item */
+.tech-item {
+  transition: transform 0.3s, opacity 0.3s;
+  cursor: pointer;
+}
+
+.tech-item:hover {
+  transform: scale(1.2);
+  opacity: 1 !important;
+}
