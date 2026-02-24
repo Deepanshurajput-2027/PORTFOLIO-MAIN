@@ -28,10 +28,12 @@ const Navbar = () => {
                 padding: 0,
                 alignItems: 'center'
             }}>
-                <li className="nav-item"><a href="#services" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>SERVICES</a></li>
-                <li className="nav-item"><a href="#certificates" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>CERTIFICATIONS</a></li>
+                <li className="nav-item"><a href="#activities" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>ACTIVITIES</a></li>
                 <li className="nav-item"><a href="#work" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>WORK</a></li>
-                <li className="nav-item"><a href="#contact" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>CONTACT</a></li>
+                
+                <li className="nav-item"><a href="#certificates" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>CERTIFICATIONS</a></li>
+                <li className="nav-item"><a href="#services" style={{ fontSize: '0.9rem', letterSpacing: '0.05em', fontWeight: 500 }}>SERVICES</a></li>
+                
                 <li>
                     <a href="#contact" style={{
                         border: '1px solid rgba(255,255,255,0.2)',

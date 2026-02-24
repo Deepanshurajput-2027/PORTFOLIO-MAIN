@@ -6,7 +6,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 
 const GithubActivity = () => {
     return (
-        <section style={{ padding: '8rem 5%', background: '#050505', color: '#fff' }}>
+        <section id="activities" style={{ padding: '8rem 5%', background: '#050505', color: '#fff' }}>
             <div className="container">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}

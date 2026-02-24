@@ -72,12 +72,15 @@ const Hero = () => {
                 >
                     <ShimmerButton text="VIEW MY WORK" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} />
 
-                    <a href="/resume.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 border-b border-transparent hover:border-yellow-500 pb-0.5 text-sm uppercase tracking-widest text-white/80 hover:text-white transition-all group">
-                        <span className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center group-hover:border-yellow-500/80 transition-colors">
-                            <FileText size={14} className="group-hover:text-yellow-500 transition-colors" />
-                        </span>
-                        Resume
-                    </a>
+                    <div className="flex items-center gap-5">
+                        <a href="/Resume.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 border-b border-transparent hover:border-yellow-500 pb-0.5 text-sm uppercase tracking-widest text-white/80 hover:text-white transition-all group" title="View Resume in New Tab">
+                            <span className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center group-hover:border-yellow-500/80 transition-colors">
+                                <FileText size={14} className="group-hover:text-yellow-500 transition-colors" />
+                            </span>
+                            Resume
+                        </a>
+
+                    </div>
 
                     <a href="https://github.com/deepanshurajput-2027" target="_blank" rel="noreferrer" className="flex items-center gap-2 border-b border-transparent hover:border-yellow-500 pb-0.5 text-sm uppercase tracking-widest text-white/80 hover:text-white transition-all group">
                         <span className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center group-hover:border-yellow-500/80 transition-colors">
